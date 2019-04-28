@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel='stylesheet' href='js-form-validation.css' type='text/css' />
+<style>
+body {
+        font-family: 'Tangerine', serif;
+        font-size: 24px;
+        background-image:url("http://www.technocrazed.com/wp-content/uploads/2015/12/Home-Wallpaper-20.jpg");
+        background-color: #D2691E;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      input[type=text],input[type=password],input[type=tel],input[type=Email]
+      {
+  width: 300px;
+  padding: 12px 20px;
+  margin: 8px ;
+  display: inline-block;
+  border: 1px groove red ;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit]
+{
+    width: 100px;
+  padding: 12px 20px;
+  margin-top: 8px;
+  margin-left: 100px;
+  display: inline-block;
+  border: 1px groove red ;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+div {
+  margin: 250px 0 0 600px;
+   text-align: center;
+  width: 800px;
+  border-radius: 5px;
+  padding: 20px;
+}
+</style>
+<script>
+function validateForm() {
+  window.open("C:/Users/Akhil/Desktop/login.html");
+  }
+</script>
+</head>
+<body>
+<center>
+  <div>
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  UserName:<input type="text" pattern=".{6,}" name="fname" placeholder="Enter UserName of atleast 6 characters" required><br>
+  Password  :<input type="Password" pattern=".{6,}" name="fpass" placeholder="Enter Password of atleast 6 characters" required><br>
+  Mobile no:<input type="tel" pattern="(7|8|9)\d{9}" name="fnumb" placeholder="Enter valid mobile no" required><br>
+  Email ID:<input type="Email" pattern="[^ @]*@[^ @]*" name="fmail" placeholder="Enter valid Email ID" required><br>
+<input type="submit" name="Submit">
+</form>
+</div>
+</center>
+
+</body>
+</html>
+</html>
